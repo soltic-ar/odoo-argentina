@@ -36,14 +36,14 @@
             <field name="priority">20</field>
             <field name="arch" type="xml">
                 <!-- we change button labels for better usability -->
-                <button name="invoice_open" position="attributes">
+<!--                 <button name="invoice_open" position="attributes">
                     <attribute name="attrs">{'invisible': ['|', ('state', '!=', 'draft'), ('validation_type', '!=', False)]}</attribute>
                     <attribute name="states"></attribute>
                 </button>
                 <button name="invoice_open" position="after">
                     <button name="invoice_open" attrs="{'invisible': ['|', ('state', '!=', 'draft'), ('validation_type', '!=', 'production')]}" string="Validar en AFIP" class="oe_highlight" groups="base.group_user"/>
                     <button name="invoice_open" attrs="{'invisible': ['|', ('state', '!=', 'draft'), ('validation_type', '!=', 'homologation')]}" string="Validar en HOMOLOGACION" class="oe_highlight" groups="base.group_user"/>
-                </button>
+                </button> -->
 
                 <notebook>
                     <page string="AFIP" name="afip" attrs="{'invisible': [('document_type_internal_type', 'not in', ['invoice', 'debit_note', 'credit_note', 'receipt_invoice'])]}">
